@@ -1,5 +1,4 @@
 # hamburger-icon-animate
-_Code by Christine Nyman_
 
 This is a little bit of code to add an animation to the hamburger icon. The bulk of the animation is powered by CSS3 keyframes and raw JavaScript is used to control when each animation is run.
 
@@ -18,7 +17,4 @@ Copy the html element '#hamburger' directly into your html file. Place it wherev
 
 Run to make sure it works. It should work on the latest browsers, except on Internet Explorer 8 and earlier. If there is a large enough demand then I will make implement support for earlier versions of IE.
 
-### Miscellaneous
-Let me know of any issues or simply say hi by emailing me.
-
-<a href="mailto:nymanchristine@gmail.com?Subject=hamburger" target="_top">Send Mail</a>
+<i>Let me know of any issues or simply <a href="mailto:nymanchristine@gmail.com?Subject=hamburger" target="_top">say hi</a>.</i>
