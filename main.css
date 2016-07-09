@@ -28,7 +28,7 @@
 
 #hamburger #bar2 {
   top: 1.5rem;
-  transition: opacity 0.5s;
+  transition: opacity 0.25s;
   z-index: 68;
 }
 

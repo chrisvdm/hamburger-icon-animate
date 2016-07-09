@@ -11,10 +11,15 @@ function animateIcon() {
   var stateActive = false;
 
   if(!stateActive){
+    stateActive = true;
+
     toCross();
     showMenu();
   } else {
+    stateActive = false;
+
     toBurger();
+    hideMenu();
   }
 }
 
@@ -30,28 +35,23 @@ function hideMenu() {
 }
 
 // Functions to activate animation
+// Morphs hamburger to cross
 function toCross() {
 
-  $('#bar1').addClass('turn-up').removeClass('back-up');
- $('#bar3').addClass('turn-down').removeClass('back-down');
-
   // hides the second bar
-  $('#bar2').animate({
-    opacity: '0'
-  }, 500
+  bar2.style.opacity = '0';
+
+  bar1.addClass('turn-up').removeClass('back-up');
+  bar3.addClass('turn-down').removeClass('back-down');
 
 } // end of toCross()
 
+// Morphs cross to hamburger
 function toBurger() {
 
-  $('#bar3').removeClass('turn-down').addClass('back-down');
-  $('#bar1').removeClass('turn-up').addClass('back-up');
+  bar1.removeClass('turn-up').addClass('back-up');
+  bar3.removeClass('turn-down').addClass('back-down');
 
-  $('#bar2').animate({
-    opacity: '1'
-  }, 500, function(){
+  bar2.style.opacity = '1';
 
-   $('#mobile-nav').slideUp(500);
-
- }); // end of closing animate
 } // end of toBurger()
