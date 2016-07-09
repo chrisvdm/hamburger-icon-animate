@@ -1,6 +1,6 @@
 {
   "name": "hamburger-icon-animate",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Minimalist CSS3 hamburger animation",
   "main": "js/hamburger-icon-animate.js",
   "directories": {
