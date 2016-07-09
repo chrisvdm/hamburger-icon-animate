@@ -7,7 +7,7 @@ It's pretty simple if you know what you're doing. It's just a matter of copy&pas
 
 First, <a href="https://github.com/3leanore/hamburger-icon-animate/archive/master.zip" title="download the code">download</a> the repo. Copy the script and css folder contents into your css and script folders.
 
-Copy the code inside main.css into your main css file. It purely contains the styling for the hamburger. You can edit the styling properties 'width', 'height' and 'background-color' but not 'position' and 'z-index'. Changing those properties could break the animation.
+Copy the code inside hia.css into your main css file. It purely contains the styling for the hamburger. You can edit the styling properties 'width', 'height' and 'background-color' but not 'position' and 'z-index'. Changing those properties could break the animation.
 
 _Important: Keep animation.css as a separate file inside the same folder as your main stylesheet._
 
