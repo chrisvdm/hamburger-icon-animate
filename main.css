@@ -60,7 +60,7 @@ Control classes */
   animation-name: backUp; }
 
 /*Animation keyframes
-bars to cross*/
+hamburger to cross*/
 @keyframes twistDown {
   0% {
     bottom: 0.5rem;
@@ -103,7 +103,7 @@ bars to cross*/
   }
 }
 
-/*cross to bars*/
+/*cross to hamburger*/
 @keyframes backDown {
   0% {
     bottom: 1.5rem;
