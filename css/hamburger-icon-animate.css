@@ -16,24 +16,24 @@
 
 .hia-bar {
   background-color: #fff;
-  width: 2.5rem;
-  height: 0.5rem;
+  width: 2.5em;
+  height: 0.5em;
   display: block;
   position: absolute;
 }
 
-.hia-bar [data-bar="1"] {
-  top: 0.5rem;
+.hia-bar[data-bar="1"] {
+  top: 0.5em;
 }
 
-.hia-bar [data-bar="2"] {
-  top: 1.5rem;
+.hia-bar[data-bar="2"] {
+  top: 1.5em;
   transition: opacity 0.25s;
   z-index: 68;
 }
 
-.hia-bar [data-bar="3"] {
-  bottom: 0.5rem;
+.hia-bar[data-bar="3"] {
+  bottom: 0.5em;
 }
 
 /*
