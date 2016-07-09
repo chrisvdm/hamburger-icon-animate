@@ -2,19 +2,45 @@
 
 This is a little bit of code to add an animation to the hamburger icon. The bulk of the animation is powered by CSS3 keyframes and raw JavaScript is used to control when each animation is run.
 
-## Instructions
-It's pretty simple if you know what you're doing. It's just a matter of copy&pasting.
+## Install
 
-First, <a href="https://github.com/3leanore/hamburger-icon-animate/archive/master.zip" title="download the code">download</a> the repo. Copy the script and css folder contents into your css and script folders.
+**bower**
 
-Copy the code inside hia.css into your main css file. It purely contains the styling for the hamburger. You can edit the styling properties 'width', 'height' and 'background-color' but not 'position' and 'z-index'. Changing those properties could break the animation.
+```
+$ bower install hamburger-icon-animate --save
+```
 
-_Important: Keep animation.css as a separate file inside the same folder as your main stylesheet._
+**npm**
 
-Link up the js files in script tags at the bottom of your html file.
+```
+$ npm install hamburger-icon-animate --save
+```
 
-Copy the html element '#hamburger' directly into your html file. Place it wherever necessary. Be careful not to change the id and class names.
+## Usage
 
-Run to make sure it works. It should work on the latest browsers, except on Internet Explorer 8 and earlier. If there is a large enough demand then I will make implement support for earlier versions of IE.
+Now that you've installed the plugin, load the script via whichever method you prefer. If you are using bower you might do something like this:
 
-<i>Let me know of any issues or simply <a href="mailto:nymanchristine@gmail.com?Subject=hamburger" target="_top">say hi</a>.</i>
+```html
+<link rel="stylesheet" href="/bower_components/hamburger-icon-animate/css/hamburger-icon-animate.css">
+<script src="/bower_components/hamburger-icon-animate/js/hamburger-icon-animate.js"></script>
+```
+
+Define the hamburger like this:
+
+```html
+<div class="hia-hamburger">
+  <div data-bar="1" class="hia-bar"></div>
+  <div data-bar="2" class="hia-bar"></div>
+  <div data-bar="3" class="hia-bar"></div>
+</div>
+```
+
+Activate the hamburger like this:
+```js
+hamburgerIcon();
+```
+
+Take a look at the [example over here](example/index.html).
+
+
+*Let me know of any issues or simply <a href="mailto:nymanchristine@gmail.com?Subject=hamburger" target="_top">say hi</a>.*
