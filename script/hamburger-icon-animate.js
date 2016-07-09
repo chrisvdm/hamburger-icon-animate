@@ -40,16 +40,16 @@ function toCross() {
   // hides the middle line
   bar2.style.opacity = '0';
 
-  swapClass(bar1, 'back-up', 'turn-up');
-  swapClass(bar3, 'back-down', 'turn-down');
+  swapClass(bar1, 'hia-back-up', 'hia-turn-up');
+  swapClass(bar3, 'hia-back-down', 'hia-turn-down');
 
 } // end of toCross()
 
 // Morphs cross to hamburger
 function toBurger() {
 
-  swapClass(bar1, 'turn-up', 'back-up');
-  swapClass(bar3, 'turn-down', 'back-down');
+  swapClass(bar1, 'hia-turn-up', 'hia-back-up');
+  swapClass(bar3, 'hia-turn-down', 'hia-back-down');
 
   // Shows middle line
   bar2.style.opacity = '1';
