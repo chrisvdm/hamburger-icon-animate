@@ -1,8 +1,8 @@
 // Script for hamburger animations
-const hamburger = document.getElementById('hamburger');
-const bar1 = document.getElementById('bar1');
-const bar2 = document.getElementById('bar2');
-const bar3 = document.getElementById('bar3');
+var hamburger = document.querySelector('.hia-hamburger');
+var bar1 = hamburger.querySelector('[data-bar="1"]');
+var bar2 = hamburger.querySelector('[data-bar="2"]');
+var bar3 = hamburger.querySelector('[data-bar="3"]');
 var stateActive = false;
 
 hamburger.addEventListener('click', animateIcon);
@@ -40,22 +40,52 @@ function toCross() {
   // hides the middle line
   bar2.style.opacity = '0';
 
-  addClass(bar1, 'turn-up');
-  removeClass(bar1, 'back-up');
-  addClass(bar3, 'turn-down');
-  removeClass(bar3, 'back-down');
+  swapClass(bar1, 'back-up', 'turn-up');
+  swapClass(bar3, 'back-down', 'turn-down');
 
 } // end of toCross()
 
 // Morphs cross to hamburger
 function toBurger() {
 
-  removeClass(bar1, 'turn-up')
-  addClass(bar1, 'back-up');
-  removeClass(bar3, 'turn-down')
-  addClass(bar3, 'back-down');
+  swapClass(bar1, 'turn-up', 'back-up');
+  swapClass(bar3, 'turn-down', 'back-down');
 
   // Shows middle line
   bar2.style.opacity = '1';
 
 } // end of toBurger()
+
+// Checks whether class is attached to element
+function hasClass(el, className) {
+  if (el.classList){
+    return el.classList.contains(className);
+  } else {
+    return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'));
+  }
+}
+
+// Adds Classes
+function addClass(el, className) {
+  if (el.classList){
+    el.classList.add(className)
+  } else if (!hasClass(el, className)) {
+    el.className += " " + className;
+  }
+}
+
+// Removes classes
+function removeClass(el, className) {
+  if (el.classList){
+    el.classList.remove(className);
+  } else if (hasClass(el, className)) {
+    var reg = new RegExp('(\\s|^)' + className + '(\\s|$)');
+    el.className = el.className.replace(reg, ' ');
+  }
+}
+
+// swaps around classes
+function swapClass(el, className1, className2) {
+  removeClass(el, className1);
+  addClass(el, className2);
+}
