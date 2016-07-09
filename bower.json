@@ -1,0 +1,17 @@
+{
+  "name": "hamburger-icon-animate",
+  "description": "Minimalist CSS3 hamburger animation",
+  "main": "js/hamburger-icon-animate.js",
+  "authors": [
+    "Christine Nyman"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css3",
+    "animation",
+    "hamburger",
+    "navigation",
+    "mobile"
+  ],
+  "homepage": "https://github.com/3leanore/hamburger-icon-animate"
+}

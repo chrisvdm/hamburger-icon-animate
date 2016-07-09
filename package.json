@@ -1,0 +1,29 @@
+{
+  "name": "hamburger-icon-animate",
+  "version": "0.0.0",
+  "description": "Minimalist CSS3 hamburger animation",
+  "main": "js/hamburger-icon-animate.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3leanore/hamburger-icon-animate.git"
+  },
+  "keywords": [
+    "css3",
+    "animation",
+    "hamburger",
+    "navigation",
+    "mobile"
+  ],
+  "author": "Christine Nyman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/3leanore/hamburger-icon-animate/issues"
+  },
+  "homepage": "https://github.com/3leanore/hamburger-icon-animate#readme"
+}
