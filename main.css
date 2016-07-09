@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+/* Hamburger container/background */
+#hamburger {
+  width: 3.5em;
+  height: 3.5em;
+  padding: 0.5em;
+  display: block;
+  background-color: #4A4A4A; /* hamburger background colour*/
+  position: relative;
+}
+
+#hamburger .bars {
+  background-color: #fff;
+  width: 2.5rem;
+  height: 0.5rem;
+  display: block;
+  position: absolute;
+}
+
+#hamburger #bar1 {
+  top: 0.5rem;
+}
+
+#hamburger #bar2 {
+  top: 1.5rem;
+  z-index: 68;
+}
+
+#hamburger #bar3 {
+  bottom: 0.5rem;
+}
+
+/*==============================================================================
+CSS Animation
+================================================================================
+Control classes */
+.animate, .turn-down, .turn-up, .back-down, .back-up {
+  transition: 0.25s ease;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards; }
+
+.turn-down {
+  animation-name: twistDown;
+  z-index: 69; }
+
+.turn-up {
+  animation-name: twistUp;
+  z-index: 70; }
+
+.back-down {
+  animation-name: backDown; }
+
+.back-up {
+  animation-name: backUp; }
+
+/*Animation keyframes
+bars to cross*/
+@keyframes twistDown {
+  0% {
+    bottom: 0.5rem;
+    position: absolute;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    bottom: 1.5rem;
+    position: absolute;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    bottom: 1.5rem;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes twistUp {
+  0% {
+    top: 0.5rem;
+    position: absolute;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    top: 1.5rem;
+    position: absolute;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 1.5rem;
+    position: absolute;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+/*cross to bars*/
+@keyframes backDown {
+  0% {
+    bottom: 1.5rem;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  25% {
+    bottom: 1.5rem;
+    position: absolute;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    bottom: 0.5rem;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes backUp {
+  0% {
+    top: 1.5rem;
+    position: absolute;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  25% {
+    top: 1.5rem;
+    position: absolute;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 0.5rem;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
