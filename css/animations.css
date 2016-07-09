@@ -1,0 +1,110 @@
+/*
+CSS Animation Classes
+Control classes
+*/
+.animate, .turn-down, .turn-up, .back-down, .back-up {
+  transition: 0.25s ease;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards; }
+
+.turn-down {
+  animation-name: twistDown;
+  z-index: 69; }
+
+.turn-up {
+  animation-name: twistUp;
+  z-index: 70; }
+
+.back-down {
+  animation-name: backDown; }
+
+.back-up {
+  animation-name: backUp; }
+
+/*
+Animation keyframes
+hamburger to cross
+*/
+@keyframes twistDown {
+  0% {
+    bottom: 0.5rem;
+    position: absolute;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    bottom: 1.5rem;
+    position: absolute;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    bottom: 1.5rem;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes twistUp {
+  0% {
+    top: 0.5rem;
+    position: absolute;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    top: 1.5rem;
+    position: absolute;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 1.5rem;
+    position: absolute;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+/*cross to hamburger*/
+@keyframes backDown {
+  0% {
+    bottom: 1.5rem;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  25% {
+    bottom: 1.5rem;
+    position: absolute;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    bottom: 0.5rem;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes backUp {
+  0% {
+    top: 1.5rem;
+    position: absolute;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  25% {
+    top: 1.5rem;
+    position: absolute;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 0.5rem;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
