@@ -16,9 +16,9 @@ Link up the js files in script tags at the bottom of your html file.
 
 Copy the html element '#hamburger' directly into your html file. Place it wherever necessary. Be careful not to change the id and class names.
 
-Run to make sure it works. It should work on the latest browsers, except on Internet Explorer 8 and earlier. 
+Run to make sure it works. It should work on the latest browsers, except on Internet Explorer 8 and earlier. If there is a large enough demand then I will make implement support for earlier versions of IE.
 
 ### Miscellaneous
-Let me know of any issues or simply say hi by emailing me
+Let me know of any issues or simply say hi by emailing me.
 
 <a href="mailto:nymanchristine@gmail.com?Subject=hamburger" target="_top">Send Mail</a>
