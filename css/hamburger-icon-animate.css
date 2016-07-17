@@ -66,19 +66,19 @@ hamburger to cross
 */
 @keyframes hia-twist-down {
   0% {
-    bottom: 0.5rem;
+    bottom: 0.5em;
     position: absolute;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   25% {
-    bottom: 1.5rem;
+    bottom: 1.5em;
     position: absolute;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    bottom: 1.5rem;
+    bottom: 1.5em;
     position: absolute;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -87,19 +87,19 @@ hamburger to cross
 
 @keyframes hia-twist-up {
   0% {
-    top: 0.5rem;
+    top: 0.5em;
     position: absolute;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   25% {
-    top: 1.5rem;
+    top: 1.5em;
     position: absolute;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    top: 1.5rem;
+    top: 1.5em;
     position: absolute;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
@@ -111,19 +111,19 @@ cross to hamburger
 */
 @keyframes hia-back-down {
   0% {
-    bottom: 1.5rem;
+    bottom: 1.5em;
     position: absolute;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
   25% {
-    bottom: 1.5rem;
+    bottom: 1.5em;
     position: absolute;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    bottom: 0.5rem;
+    bottom: 0.5em;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
@@ -131,19 +131,19 @@ cross to hamburger
 
 @keyframes hia-back-up {
   0% {
-    top: 1.5rem;
+    top: 1.5em;
     position: absolute;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
   25% {
-    top: 1.5rem;
+    top: 1.5em;
     position: absolute;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   100% {
-    top: 0.5rem;
+    top: 0.5em;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
