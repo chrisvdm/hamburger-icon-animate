@@ -46,5 +46,21 @@ hamburgerIcon();
 
 Take a look at the [example over here](example/index.html).
 
+## API
+
+### hamburgerIcon([options])
+
+Binds event handlers for animating the hamburger icon to the first element in the document matching the selector `.hia-hamburger`.
+
+An object of `options` may be given:
+  - `showMenu`: A callback to be called each time the menu is shown (called at the *start* of the animation)
+  - `hideMenu`: A callback to be called each time the menu is hidden (called at the *start* of the animation)
+
+  ```js
+  hamburgerIcon({
+    showMenu: function() { console.log('showing menu'); },
+    hideMenu: function() { console.log('hiding menu'); }
+  });
+  ```
 
 *Let me know of any issues or simply <a href="mailto:nymanchristine@gmail.com?Subject=hamburger" target="_top">say hi</a>.*
