@@ -25,21 +25,31 @@
       stateActive: false
     }
 
-    hamburger.addEventListener('click', function(){
+    function listener() {
       animateIcon(ui);
-    });
+    }
+
+    hamburger.addEventListener('click', listener);
+
+    return {
+      toCross: function() {
+        toCross(ui)
+      },
+      toBurger: function() {
+        toBurger(ui)
+      },
+      destroy: function() {
+        hamburger.removeEventListener('click', listener);
+      }
+    }
 
   }
 
   function animateIcon(ui) {
     if(!ui.stateActive){
-      ui.stateActive = true;
-
       toCross(ui);
       ui.showMenu();
     } else{
-      ui.stateActive = false;
-
       toBurger(ui);
       ui.hideMenu();
     }
@@ -57,6 +67,7 @@
     swapClass(ui.bar1, 'hia-back-up', 'hia-turn-up');
     swapClass(ui.bar3, 'hia-back-down', 'hia-turn-down');
 
+    ui.stateActive = true;
   } // end of toCross()
 
   // Morphs cross to hamburger
@@ -68,6 +79,7 @@
     // Shows middle line
     ui.bar2.style.opacity = '1';
 
+    ui.stateActive = false;
   } // end of toBurger()
 
   // Checks whether class is attached to element
